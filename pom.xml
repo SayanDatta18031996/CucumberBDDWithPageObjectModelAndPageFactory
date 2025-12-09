@@ -10,6 +10,12 @@
 			<artifactId>cucumber-java</artifactId>
 			<version>7.30.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.30.0</version>
+</dependency>
 		<!--https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
 		<dependency>
 			<groupId>tech.grasshopper</groupId>
@@ -43,10 +49,5 @@
     <version>2.0.5</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-core</artifactId>
-    <version>7.31.0</version>
-</dependency>
 	</dependencies>
 </project>
