@@ -1,11 +1,18 @@
 Feature: Login feature
-	In order to sucessful login
-	As a user
-	I have to enter correct username and password
+    In order to sucessful login
+    As a user
+    I have to enter correct username and password
 
-  Scenario: Login to facebook website
+  Scenario Outline: Login to facebook website with as user
     Given user navigates to facebook website
     When user validates the homepage title
-    Then user enters the username
-    And user enters the password
-    And Then user clicks on signin button
+    Then user enters the "<username>" username
+    And user enters the "<password>" password
+    And user clicks on signin button
+
+    Examples:
+      | username | password |
+      | valid    | valid    |
+      | valid    | invalid  |
+      | invalid  | valid    |
+      | invalid  | invalid  |

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <theme>dark</theme>
+    
+        <!-- document encoding -->
+        <encoding>UTF-8</encoding>
+        
+        <!-- protocol for script and stylesheets -->
+        <protocol>https</protocol>
+        
+        <!-- title of the document -->
+        <documentTitle>Extent Reports</documentTitle>
+        
+        <!-- report name - displayed at top-nav -->
+        <reportName>BDD Cucumber Report</reportName>
+        
+        <!-- timestamp format -->
+        <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+        
+        <!-- custom javascript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    
+                });
+            ]]>
+        </scripts>
+        
+        <!-- custom styles -->
+        <styles>
+            <![CDATA[
+            .report-name { padding-left: 10px; } 
+            .report-name > img { float: left;height: 90%;margin-left: 30px;margin-top: 2px;width: auto; }
+            .report-headline { color: #C4C4C4; }
+            .report-headline > p { color: #C4C4C4;font-size: 12px; }
+            .test-wrapper > .test-list { padding: 0; }
+            .test-list { margin: 0;padding: 0; }
+            .test-list > li { list-style: none;margin-bottom: 15px;padding: 10px;border: 1px solid #ddd;border-radius: 4px; }
+            .test-list > li:hover { background-color: #f5f5f5; }
+            .test-list > li.pass { border-color: #28a745; }
+            .test-list > li.fail { border-color: #dc3545; }
+            .test-list > li.skip { border-color: #ffc107; }
+            .test-list > li.warning { border-color: #ff9800; }
+            .test-list > li.info { border-color: #17a2b8; }
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>
